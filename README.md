@@ -16,3 +16,9 @@
 ### 3. PREDYKCJA CHURNU W FIRMIE TELEKOMUNIKACYJNEJ
 * PROBLEM KLASYFIKACJI
 (https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset)
+
+
+1. EDA:
+- null value
+- outliers
+- corelation
