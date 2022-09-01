@@ -15,10 +15,14 @@ Classification problem - data set from: https://www.kaggle.com/datasets/becksddf
 - outliers
 - corellation
 - check if data set is unbalance
+- Label Encoding (how to group numerical value in bins -> bank marketing: notebook 1)
+
+EXAMPLE bank modeling (notebook 2)
 
 
+Label Encoder / get_dummies
 TRAIN_TEST_SPLIT:
-<> Standarization after split
+- Standarization after split and before model
 - try models without any modification
 - try model with selection best features (many option: for each option built new model and test it)
 - try pca with new model (new train test split)
@@ -32,7 +36,6 @@ feauture selection -> Breast Cancer (notebook 1)
 - Standarization
 - Normalization
 - Regularization
-- Label Encoding
 
 3. Variable Selection:
 - Select From Model
@@ -68,6 +71,8 @@ feauture selection -> Breast Cancer (notebook 1)
 - Roc Curve
 - Gini
 - Classification Report
+
+EXAMPLE: bank modeling (notebook 1)
 
 8. Selecting the best model
 
