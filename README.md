@@ -19,6 +19,13 @@ Classification problem - data set from: https://www.kaggle.com/datasets/becksddf
 
 TRAIN_TEST_SPLIT:
 <> Standarization after split
+- try models without any modification
+- try model with selection best features (many option: for each option built new model and test it)
+- try pca with new model (new train test split)
+
+feauture selection -> Breast Cancer (notebook 1)
+- check model with crossvalidation using best features and yet without optymize hiperparameters.
+- after seleted best features make model from scratch one more time using this choosen features and using grid search CV check hiperparameter for better prediction
 
 
 2. Data transformation:
