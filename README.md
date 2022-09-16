@@ -1,79 +1,50 @@
-# ML-Projects
+# CHURN IN TELCO INDUSTRY
+
+Prediction of churn in Telecom industry
+
+Classification problem
+
+Dataset from: https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset
+
+### Description of variables:
+- state: the state the user lives in
+- account length: the number of days the user has this account
+- area code: the code of the area the user lives in
+- phone number: the phone number of the user
+- international plan: true if the user has the international plan, otherwise false
+- voice mail plan: true if the user has the voice mail plan, otherwise false
+- number vmail messages: the number of voice mail messages the user has sent
+- total day minutes: total number of minutes the user has been in calls during the day
+- total day calls: total number of calls the user has done during the day
+- total day charge: total amount of money the user was charged by the Telecom company for calls during the day
+- total eve minutes: total number of minutes the user has been in calls during the evening
+- total eve calls: total number of calls the user has done during the evening
+- total eve charge: total amount of money the user was charged by the Telecom company for calls during the evening
+- total night minutes: total number of minutes the user has been in calls during the night
+- total night calls: total number of calls the user has done during the night
+- total night charge: total amount of money the user was charged by the Telecom company for calls during the night
+- total intl minutes: total number of minutes the user has been in international calls
+- total intl calls: total number of international calls the user has done
+- total intl charge: total amount of money the user was charged by the Telecom company for international calls
+- customer service calls: number of customer service calls the user has done
+- churn: true if the user terminated the contract, otherwise false
+
+### Describtion about project:
+Using differnt machine learning classificator I will try to predict churn of customers. As such disproportions often appear in such data sets (customer churns), it is necessary to investigate whether this does not occur here and, if so, try to apply appropriate methods to solve this problem. In the dataset is 21 variable so maybe it will be usefull to drop some of them or try to change them somehow.
+
+### Steps to follow:
+1. Importing needed libraries, setting options, creating functions
+2. Importing data
+3. Basic information and metrics about dataset
+4. Visualization and correlation - first conclusions
+5. Feature selection and dimension reduction
+6. Classification with different models
+7. Crossvalidation to see if model is overfitting or not
+8. Improving prediction with best model
+9. Summary
 
 
-### Prediction of churn in Telecom industry
-Classification problem - data set from: https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset
-
-1.Import data and python packages
-- Import packages
-- Import data
-- Data shape and info
-
-2. EDA (Preprocessing & Data Viz):
-- null values is there any null value?
-- categorical and numerical data - how many? -> więcej w zbiorze: Bank_loan_modelling Bank_looking_for_clients
-- outliers
-- corellation
-- check if data set is unbalance
-- Label Encoding (how to group numerical value in bins -> bank marketing: notebook 1)
-
-EXAMPLE bank modeling (notebook 2)
 
 
-Label Encoder / get_dummies
-TRAIN_TEST_SPLIT:
-- Standarization after split and before model
-- try models without any modification
-- try model with selection best features (many option: for each option built new model and test it)
-- try pca with new model (new train test split)
-
-feauture selection -> Breast Cancer (notebook 1)
-- check model with crossvalidation using best features and yet without optymize hiperparameters.
-- after seleted best features make model from scratch one more time using this choosen features and using grid search CV check hiperparameter for better prediction
-
-
-2. Data transformation:
-- Standarization
-- Normalization
-- Regularization
-
-3. Variable Selection:
-- Select From Model
-
-4. Dimmension reduction
-- PCA
-
-5. Unbalance data set:
-- SMOOTH
-- 
-
-6. Model selection
-- Logistic Regression
-- SVM
-- Decision Tree
-- Random Forest / Bagging Classifier
-- Gradient Boosting Classifier
-- Ada Boost
-- XGBoost
-- LightGBM
-- Naive Bayes
-- KNN
-
-7. Validation, checking metrics for different models and comapriing them
-- Precision
-- Recall
-- F1 Score
-- Accuracy
-- Total 
-- Mislabel
-- Confussion Matrix
-- Roc Auc Score
-- Roc Curve
-- Gini
-- Classification Report
-
-EXAMPLE: bank modeling (notebook 1)
-
-8. Selecting the best model
 
 
