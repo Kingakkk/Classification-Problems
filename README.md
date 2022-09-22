@@ -7,7 +7,7 @@ This project is made as a summary of the knowledge gained from the Data Science 
 ## Loyal vs Churn
 The aim of this project is to predict whether a given customer of one of the telecommunications companies will leave or stay. To be able to recognize customers behavior it will be use machine learning based on classification models such as Random Forest, GradientBoosting or XGBoost. 
 
-Dataset is from Kaggle: https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset in csv format and each row contain information about one customer. 
+Dataset is from Kaggle: https://www.kaggle.com/datasets/becksddf/churn-in-telecoms-dataset in csv format and each row contain information about one customer. The file with data has been added to this repository.
 
 ### Description of variables:
 - state: the state the user lives in
