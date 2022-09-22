@@ -4,6 +4,8 @@ Prediction of churn in Telecom industry - Classification problem
 
 This project is made as a summary of the knowledge gained from the Data Science bootcamp organized by Sages
 
+Project name: "Uczenie maszynowe w przewidywaniu churnu branzy telekomunikacyjnej"
+
 ## Loyal vs Churn
 The aim of this project is to predict whether a given customer of one of the telecommunications companies will leave or stay. To be able to recognize customers behavior it will be use machine learning based on classification models such as Random Forest, GradientBoosting or XGBoost. 
 
