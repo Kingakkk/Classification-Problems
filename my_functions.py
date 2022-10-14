@@ -307,7 +307,7 @@ def preprocessing(X, preprocessor=None):
 # In[12]:
 
 
-def resample_data(data, target, col_to_drop:list = None):
+def resample_data(data, target, col_to_drop:list = None, label_exist=dict_with_mapping):
     """ 
     This function takes:
     < target - name of target columns in string
@@ -315,7 +315,12 @@ def resample_data(data, target, col_to_drop:list = None):
     < col_to_drop - list of column names which we want to drop
     And resample data if there is 2 classes to predict.
     """
-    df = basic_preprocess(data=data, target=target, plot_corr='no', col_to_drop=col_to_drop, divide='no')
+    df, dict_with_mapping = basic_preprocess(data=data, 
+                                             target='churn', 
+                                             plot_corr='no', 
+                                             col_to_drop=['phone number'], 
+                                             divide='no', 
+                                             label_exist=label_exist)
     if data[target].nunique() == 2:
         
         unique = data[target].unique().tolist()
@@ -635,7 +640,7 @@ def calculate_metrics(target, prediction, average='macro'):
 # In[23]:
 
 
-def print_report_for_classification(model, X_train, X_test, y_train, y_test, scoring='f1', target_names: list=None):
+def print_report_for_classification(model, X_train, X_test, y_train, y_test, X, y, scoring='f1', target_names: list=None):
     """ 
     This function takes:
     < model - it can be also pipeline
